@@ -1,0 +1,32 @@
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.restore
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# NetBeans
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbproject/spring-beans.xml
+
+# IDEs and Editors
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+.vscode/
+
+# Logs and temp files
+*.log
+*.tmp
+*.bak
+remove_lombok.py
