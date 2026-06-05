@@ -17,9 +17,15 @@ public class Main {
     private static final ContabilidadService contabilidadService = new ContabilidadService();
     private static final ReporteService reporteService = new ReporteService(
             inmuebleService, inquilinoService, reciboService, contabilidadService);
-    private static final Scanner sc = new Scanner(System.in);
+    private static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
+        try {
+            System.setOut(new java.io.PrintStream(System.out, true, "UTF-8"));
+            sc = new Scanner(System.in, "UTF-8");
+        } catch (java.io.UnsupportedEncodingException e) {
+            // Fallback silencioso
+        }
         cargarDatosDePrueba();
         int opcion;
         do {
